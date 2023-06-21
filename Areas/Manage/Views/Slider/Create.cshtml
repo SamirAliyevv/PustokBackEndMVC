@@ -1,0 +1,55 @@
+﻿@model Sliders
+<div class="container">
+
+
+    <div class="row justify-content-center">
+
+
+        <div class="col-md-8">
+            <h1> Sliders Create</h1>
+
+        </div>
+        <div class="col-md-8">
+            <form method="post" asp-action="create" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="HeaderTitle">HeaderTitle</label>
+                    <input asp-for="HeaderTitle" class="form-control">
+                    <span class="text-danger" asp-validation-for="HeaderTitle"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Order">Order</label>
+                    <input asp-for="Order" class="form-control">
+                    <span class="text-danger" asp-validation-for="Order"></span>
+                </div>
+               
+                <div class="form-group">
+                    <label asp-for="Price">Price</label>
+                    <input asp-for="Price" class="form-control">
+                    <span class="text-danger" asp-validation-for="Price"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description">Description</label>
+                    <textarea asp-for="Description" class="form-control"></textarea>
+                    <span class="text-danger" asp-validation-for="Description"></span>
+                </div>
+
+             
+                <div class="form-group">
+                    <label asp-for="ImageFile">ImageFile</label>
+                    <input asp-for="ImageFile" class="form-control">
+                    <span class="text-danger" asp-validation-for="ImageFile"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+

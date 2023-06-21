@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Areas",
+    "\\Areas\\Manage",
+    "\\Areas\\Manage\\Controllers",
+    "\\Areas\\Manage\\ViewModels",
+    "\\Areas\\Manage\\Views",
+    "\\Attributes",
+    "\\Attributes\\CustomValidationAttribute",
+    "\\Entities",
+    "\\Helpers"
+  ],
+  "SelectedNode": "\\Areas\\Manage\\Controllers\\GenresController.cs",
+  "PreviewInSolutionExplorer": false
+}

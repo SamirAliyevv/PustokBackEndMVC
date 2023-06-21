@@ -1,0 +1,39 @@
+﻿@model Authors
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container">
+
+
+    <div class="row justify-content-center">
+
+
+        <div class="col-md-8">
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">FullName : @Model.FullName</h5>
+                    <h5 class="card-title">FullName : @Model.Books.Count</h5>
+
+
+
+                    <a asp-action="index" class="btn btn-warning">Go Back</a>
+                    <form method="post" asp-action="delete" class="d-inline-block">
+                        <input type="hidden" name="id" value="@Model.Id" />
+                        <button type="submit" class="btn btn-danger"> Delete</button>
+
+                    </form> 
+
+                </div>
+            </div>
+
+
+         
+        
+        </div>
+
+
+    </div>
+</div>
+

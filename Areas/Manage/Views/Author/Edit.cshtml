@@ -1,0 +1,32 @@
+﻿@model Authors
+<div class="container">
+
+
+    <div class="row justify-content-center">
+
+
+        <div class="col-md-8">
+            <h1> Authors Edit</h1>
+
+        </div>
+        <div class="col-md-8">
+            <form method="post" asp-action="edit">
+                <div class="form-group">
+                    <label asp-for="FullName">FullName</label>
+                    <input asp-for="FullName" class="form-control">
+                    <span class="text-danger" asp-validation-for="FullName"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+        </div> 
+
+
+    </div>
+
+
+
+</div>
+
